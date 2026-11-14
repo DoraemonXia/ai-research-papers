@@ -3,7 +3,7 @@
 > A curated directory of notable AI research papers, organized by research topic. Conference and year are shown on each paper entry.
 > The list structure is inspired by [papers_for_protein_design_using_DL](https://github.com/Peldom/papers_for_protein_design_using_DL).
 
-**Last updated:** 2026-11-14T22:14:27+08:00  
+**Last updated:** 2026-11-14T22:17:39+08:00  
 **Coverage:** major AI conferences from 2024 onward · 494 selected papers  
 **Entry format:** paper · conference and year · topic · short summary
 
