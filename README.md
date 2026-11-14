@@ -1,12 +1,5 @@
 # AI Research Papers by Topic
 
-> A curated directory of notable AI research papers, organized by research topic. Conference and year are shown on each paper entry.
-> The list structure is inspired by [papers_for_protein_design_using_DL](https://github.com/Peldom/papers_for_protein_design_using_DL).
-
-**Last updated:** 2026-11-14T22:17:39+08:00  
-**Coverage:** major AI conferences from 2024 onward · 494 selected papers  
-**Entry format:** paper · conference and year · topic · short summary
-
 ## Contents
 
 - [Language Models and NLP](#language-models-and-nlp)
@@ -27,8 +20,6 @@
 - [Other AI Research](#other-ai-research)
 
 ---
-
-> This is a curated selection, not a complete proceedings dump. It combines papers selected through public review records, notable conference presentations, awards, and citation signals when other signals are available. Coverage depends on the fields exposed by each venue-year source; an empty venue-year does not mean that no notable papers were published there. Numeric review ratings and their pre- or post-rebuttal snapshots are retained in the data files and are not displayed here.
 
 ## Language Models and NLP
 

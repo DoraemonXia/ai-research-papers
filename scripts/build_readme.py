@@ -61,7 +61,6 @@ def display_status(paper: dict) -> str:
 def main() -> None:
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     papers = catalog.get("papers", [])
-    updated_at = clean(catalog.get("updated_at", ""))
     grouped: dict[str, list[dict]] = defaultdict(list)
     for paper in papers:
         grouped[clean(paper.get("topic")) or "Other AI Research"].append(paper)
@@ -72,25 +71,12 @@ def main() -> None:
     lines = [
         "# AI Research Papers by Topic",
         "",
-        "> A curated directory of notable AI research papers, organized by research topic. Conference and year are shown on each paper entry.",
-        "> The list structure is inspired by [papers_for_protein_design_using_DL](https://github.com/Peldom/papers_for_protein_design_using_DL).",
-        "",
-        f"**Last updated:** {updated_at}  ",
-        f"**Coverage:** major AI conferences from 2024 onward · {len(papers)} selected papers  ",
-        "**Entry format:** paper · conference and year · topic · short summary",
-        "",
         "## Contents",
         "",
     ]
     for topic in topics:
         lines.append(f"- [{topic}](#{slug(topic)})")
-    lines += [
-        "",
-        "---",
-        "",
-        "> This is a curated selection, not a complete proceedings dump. It combines papers selected through public review records, notable conference presentations, awards, and citation signals when other signals are available. Coverage depends on the fields exposed by each venue-year source; an empty venue-year does not mean that no notable papers were published there. Numeric review ratings and their pre- or post-rebuttal snapshots are retained in the data files and are not displayed here.",
-        "",
-    ]
+    lines += ["", "---", ""]
 
     for topic in topics:
         entries = grouped[topic]
@@ -122,7 +108,7 @@ def main() -> None:
         "",
     ]
     README_PATH.write_text("\n".join(lines), encoding="utf-8")
-    print(f"Wrote {README_PATH}: {len(papers)} papers across {len(topics)} topics")
+    print(f"Updated {README_PATH}")
 
 
 if __name__ == "__main__":
