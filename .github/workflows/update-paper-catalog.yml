@@ -1,0 +1,40 @@
+name: Update AI paper catalogue
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 08:17 China Standard Time every day.
+    - cron: "17 0 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-paper-catalog
+  cancel-in-progress: true
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collect current high-scoring ICLR papers
+        run: python scripts/collect_top20.py
+
+      - name: Refresh multi-conference catalogue and review-stage history
+        run: |
+          python scripts/collect_papers.py
+          python scripts/build_readme.py
+
+      - name: Commit refreshed catalogue
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh AI paper catalogue"
+          file_pattern: README.md data/*.json

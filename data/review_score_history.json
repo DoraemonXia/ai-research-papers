@@ -1,0 +1,173 @@
+{
+  "snapshots": [
+    {
+      "source": "ICLR 2027",
+      "observed_at": "2026-11-14T13:54:33Z",
+      "phase": "author rebuttal and public discussion",
+      "scores": {
+        "ICLR-2027-2dhoYgHiC2": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-3WJt45k8b3": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-5PWu6Ds1fO": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-IgVNSa3MMg": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-Jn7WiQ9LtS": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-Lkq8S9i7Qm": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-NpBFkL2BTm": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-PQdqz0vaG5": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-RWcRiQ45vV": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-U1ObEVC4A7": {
+          "ratings": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 4.0
+        },
+        "ICLR-2027-V84yBc0EgP": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-X4lPQWX5Ds": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-XsOXBiKamY": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.75
+        },
+        "ICLR-2027-ZZ2jyq4qFC": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-cRvwvthrBO": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-ddJW429f5j": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-gpt1K3Ia4D": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-m5TLPK0U7O": {
+          "ratings": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 4.0
+        },
+        "ICLR-2027-n9zG3wmMK9": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        },
+        "ICLR-2027-q1jd5DsPfx": {
+          "ratings": [
+            3.0,
+            4.0,
+            4.0
+          ],
+          "score_mean": 3.6667
+        }
+      }
+    }
+  ],
+  "last_checked_at": "2026-11-14T14:11:02Z"
+}

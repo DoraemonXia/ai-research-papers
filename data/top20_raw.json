@@ -1,0 +1,448 @@
+{
+  "venue": "ICLR 2027",
+  "retrieved_at_local": "2026-11-14 22:05:31 +0800",
+  "source_rating_table": "https://papercopilot.com/statistics/iclr-statistics/iclr-2027-statistics/",
+  "source_paperlist": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2027-paper-list/",
+  "review_scale": "1-4",
+  "ranking_rule": "Arithmetic mean of raw ratings; require >=3 posted ratings; tie break by review count, mean confidence, then title.",
+  "pages_checked": [
+    {
+      "batch": 0,
+      "offset": 0,
+      "count": 100,
+      "max_mean": 4.0,
+      "min_mean": 2.3333333333333335
+    },
+    {
+      "batch": 1,
+      "offset": 100,
+      "count": 1500,
+      "max_mean": 3.5,
+      "min_mean": 2.0
+    }
+  ],
+  "selected": [
+    {
+      "title": "Context Language Models",
+      "forum_id": "U1ObEVC4A7",
+      "track": "foundation or frontier models, including LLMs",
+      "status": "Active",
+      "ratings": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 4.0,
+      "mean_confidence": 3.6666666666666665,
+      "abstract_snippet": "We introduce Context Language Models (CLMs), language models that natively manage their own context.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=U1ObEVC4A7"
+    },
+    {
+      "title": "Latent Taxonomies: How Property Induction Develops in Language Model Pre-training",
+      "forum_id": "m5TLPK0U7O",
+      "track": "foundation or frontier models, including LLMs",
+      "status": "Active",
+      "ratings": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        4.0,
+        3.0
+      ],
+      "mean_rating": 4.0,
+      "mean_confidence": 3.3333333333333335,
+      "abstract_snippet": "When told that robins have sesamoid bones, people are far more prone to extend the property to sparrows than to whales.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=m5TLPK0U7O"
+    },
+    {
+      "title": "Bridging the Gap Between Homogeneous and Heterogeneous Asynchronous Optimization Is Surprisingly Difficult",
+      "forum_id": "XsOXBiKamY",
+      "track": "optimization",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        4.0,
+        4.0,
+        2.0
+      ],
+      "mean_rating": 3.75,
+      "mean_confidence": 3.25,
+      "abstract_snippet": "Modern large-scale machine learning tasks often require multiple workers, devices, CPUs, or GPUs to compute stochastic gradients in parallel and asynchronously to train model weights.",
+      "n_reviews": 4,
+      "openreview_url": "https://openreview.net/forum?id=XsOXBiKamY"
+    },
+    {
+      "title": "OSFAL: Orthogonal Cross-Spectral Feature Alignment and Layer-Localized Cross-View Learning for Any-Scenario Person Re-Identification",
+      "forum_id": "3WJt45k8b3",
+      "track": "applications to computer vision, audio, language, and other modalities",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.6666666666666665,
+      "abstract_snippet": "In Any-Scenario Person Re-Identification (AS-ReID), a unified model must retrieve identities across spectral modalities and aerial--ground views.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=3WJt45k8b3"
+    },
+    {
+      "title": "Rethinking Multi-View Clustering as Symmetric Incremental Reasoning",
+      "forum_id": "5PWu6Ds1fO",
+      "track": "unsupervised, self-supervised, semi-supervised, and supervised representation learning",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.6666666666666665,
+      "abstract_snippet": "Deep multi-view clustering seeks shared structure from heterogeneous observations without supervision; however, existing methods often rely on shallow view-level coupling, limiting progressive cross-view reasoning.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=5PWu6Ds1fO"
+    },
+    {
+      "title": "Uncertainty-Driven Trustworthy Multi-modal Information Bottleneck Clustering",
+      "forum_id": "n9zG3wmMK9",
+      "track": "unsupervised, self-supervised, semi-supervised, and supervised representation learning",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.6666666666666665,
+      "abstract_snippet": "The Information Bottleneck (IB) theory seeks to extract minimal sufficient representations and filter redundant noise, providing a solid foundation for multi-modal clustering.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=n9zG3wmMK9"
+    },
+    {
+      "title": "VolS-GS: Relightable Gaussian Splatting With Volumetric Subsurface Scattering",
+      "forum_id": "RWcRiQ45vV",
+      "track": "applications to computer vision, audio, language, and other modalities",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.6666666666666665,
+      "abstract_snippet": "We present VolS-GS, a relightable Gaussian splatting framework that reconstructs objects from\none-light-at-a-time (OLAT) captures and renders them under novel lighting and viewpoints.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=RWcRiQ45vV"
+    },
+    {
+      "title": "Allocation-Dependent Distortion for Fair Clustering Ensembles",
+      "forum_id": "V84yBc0EgP",
+      "track": "unsupervised, self-supervised, semi-supervised, and supervised representation learning",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        3.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.3333333333333335,
+      "abstract_snippet": "Clustering ensembles combine multiple base partitions into a final consensus.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=V84yBc0EgP"
+    },
+    {
+      "title": "DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents",
+      "forum_id": "q1jd5DsPfx",
+      "track": "alignment, fairness, safety, privacy, and societal considerations",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.3333333333333335,
+      "abstract_snippet": "AI agents are increasingly deployed across diverse domains to automate complex workflows through long-horizon and high-stakes action executions.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=q1jd5DsPfx"
+    },
+    {
+      "title": "Optimal VC Dimension of Contrastive Learning With Margin",
+      "forum_id": "cRvwvthrBO",
+      "track": "learning theory",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.3333333333333335,
+      "abstract_snippet": "Contrastive learning is a successful paradigm for learning $d$-dimensional geometric representations from a collection of “anchor–positive–negative” triplets $(i,j^{+},k^{-})$, indicating that “item $i$ is closer to $j$ than to $k$.” Despite its success, understanding why...",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=cRvwvthrBO"
+    },
+    {
+      "title": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
+      "forum_id": "2dhoYgHiC2",
+      "track": "foundation or frontier models, including LLMs",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        4.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.3333333333333335,
+      "abstract_snippet": "Chunked KV-cache compression reduces the memory and attention costs of long-context inference by compressing windows of consecutive tokens into fewer cache entries at a fixed stride.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=2dhoYgHiC2"
+    },
+    {
+      "title": "Reliable Correspondence Learning for Incomplete and Unaligned Multi-View Clustering",
+      "forum_id": "Lkq8S9i7Qm",
+      "track": "unsupervised, self-supervised, semi-supervised, and supervised representation learning",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.3333333333333335,
+      "abstract_snippet": "Incomplete and unaligned multi-view clustering (IUMVC) has emerged as a challenging paradigm for discovering shared cluster structures from multiple views, where observations may be missing and cross-view sample correspondence is unknown.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=Lkq8S9i7Qm"
+    },
+    {
+      "title": "Co-folding with a Soup of Representations",
+      "forum_id": "Jn7WiQ9LtS",
+      "track": "applications to physical sciences (physics, chemistry, biology, etc.)",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        2.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "Co-folding models such as AlphaFold3, Protenix, ESMFold2, and OpenDDE have advanced rapidly, yet no single model consistently performs best across all biomolecular complexes.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=Jn7WiQ9LtS"
+    },
+    {
+      "title": "Drift Is Not Enough: A Diffusive Floor for Gradient Propagation in Recurrent Networks",
+      "forum_id": "X4lPQWX5Ds",
+      "track": "learning on time series and dynamical systems",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        2.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "Whether a recurrent model learns long-range dependencies is determined by whether its gradients survive backpropagation over long horizons without exploding or vanishing.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=X4lPQWX5Ds"
+    },
+    {
+      "title": "Learning While Scheduling Jobs under Context-Dependent Service Rates: An Anytime Rate-Optimal Algorithm",
+      "forum_id": "ZZ2jyq4qFC",
+      "track": "reinforcement learning",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        2.0,
+        3.0,
+        4.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "We study contextual queueing bandits, where a learner schedules jobs while learning unknown service rates modeled by logistic functions of job-server features.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=ZZ2jyq4qFC"
+    },
+    {
+      "title": "Matryoshka Language Model Suites",
+      "forum_id": "IgVNSa3MMg",
+      "track": "foundation or frontier models, including LLMs",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "Training a language model suite classically requires training each model separately and serving them independently.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=IgVNSa3MMg"
+    },
+    {
+      "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+      "forum_id": "ddJW429f5j",
+      "track": "datasets and benchmarks",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        3.0,
+        2.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=ddJW429f5j"
+    },
+    {
+      "title": "Training Honesty Adapters To Detect Deception In LLMs",
+      "forum_id": "gpt1K3Ia4D",
+      "track": "alignment, fairness, safety, privacy, and societal considerations",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "Activation probes trained on off-policy data are a cheap way to monitor language models for deception, but they often fail to generalize to on-policy deception outside their training distribution.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=gpt1K3Ia4D"
+    },
+    {
+      "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive World Model Evaluation",
+      "forum_id": "PQdqz0vaG5",
+      "track": "datasets and benchmarks",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 3.0,
+      "abstract_snippet": "Interactive world models are advancing rapidly, yet existing benchmarks cover only part of the required competencies, leaving no unified standard for systematic evaluation.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=PQdqz0vaG5"
+    },
+    {
+      "title": "Books, Copyright, and the Future of Foundation Models: An Empirical Study of Fiction in Pretraining",
+      "forum_id": "NpBFkL2BTm",
+      "track": "alignment, fairness, safety, privacy, and societal considerations",
+      "status": "Active",
+      "ratings": [
+        3.0,
+        4.0,
+        4.0
+      ],
+      "confidence": [
+        2.0,
+        3.0,
+        3.0
+      ],
+      "mean_rating": 3.6666666666666665,
+      "mean_confidence": 2.6666666666666665,
+      "abstract_snippet": "The use of books to train large language models has prompted numerous lawsuits against commercial AI providers, yet the reasons such data choices matter remain largely opaque outside industry labs.",
+      "n_reviews": 3,
+      "openreview_url": "https://openreview.net/forum?id=NpBFkL2BTm"
+    }
+  ]
+}
