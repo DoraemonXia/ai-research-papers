@@ -12,7 +12,7 @@ import math
 import re
 import time
 from collections import defaultdict
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
@@ -412,6 +412,14 @@ def current_iclr_phase(today: date) -> str:
     return "post-decision public record"
 
 
+def parse_snapshot_time(value: str) -> datetime | None:
+    try:
+        timestamp = datetime.strptime(clean(value), "%Y-%m-%d %H:%M:%S %z")
+        return timestamp.astimezone(timezone.utc)
+    except (TypeError, ValueError):
+        return None
+
+
 def merge_live_iclr(records: dict[str, dict[str, Any]], raw: dict[str, Any], retrieved_at: str, phase: str) -> None:
     for source in raw.get("selected", []):
         forum_id = clean(source.get("forum_id"))
@@ -526,12 +534,20 @@ def main() -> None:
 
     flat_records = {record["id"]: record for records in records_by_source.values() for record in records}
     raw_live = load_json(TOP20_PATH, {})
-    phase = current_iclr_phase(now.astimezone(ZoneInfo("America/Los_Angeles")).date())
-    if raw_live.get("selected"):
-        merge_live_iclr(flat_records, raw_live, retrieved_at_local, phase)
+    snapshot_time = parse_snapshot_time(raw_live.get("retrieved_at_local", ""))
+    snapshot_age = now - snapshot_time if snapshot_time else None
+    if raw_live.get("selected") and snapshot_time and snapshot_age and timedelta(minutes=-5) <= snapshot_age <= timedelta(hours=36):
+        snapshot_local = snapshot_time.astimezone(ZoneInfo("Asia/Shanghai"))
+        snapshot_at = snapshot_local.isoformat(timespec="seconds")
+        phase = current_iclr_phase(snapshot_time.astimezone(ZoneInfo("America/Los_Angeles")).date())
+        observed_at = snapshot_time.isoformat(timespec="seconds").replace("+00:00", "Z")
+        merge_live_iclr(flat_records, raw_live, snapshot_at, phase)
         history = load_json(REVIEW_HISTORY_PATH, {"snapshots": []})
         update_review_history(flat_records, history, observed_at, phase)
         write_json(REVIEW_HISTORY_PATH, history)
+    elif raw_live.get("selected"):
+        age_text = f"{snapshot_age.total_seconds() / 3600:.1f} hours" if snapshot_age else "unknown age"
+        print(f"Skipping stale ICLR review snapshot ({age_text}); preserving previously collected review records.")
 
     papers = list(flat_records.values())
     papers.sort(key=lambda p: (p.get("topic", "").casefold(), -int(p.get("year", 0)), p.get("venue", ""), p.get("title", "").casefold()))

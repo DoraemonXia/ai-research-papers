@@ -41,3 +41,5 @@ The present pipeline uses the third-party aggregator as a discovery and normaliz
 ## Daily update
 
 GitHub Actions runs at 00:17 UTC (08:17 China Standard Time) each day and can also be triggered manually. It checks source ETags, refreshes changed venue-year lists, collects the current ICLR 2027 review snapshot, updates the internal score history, and regenerates `README.md`. GitHub scheduled jobs can start later than their requested time during platform load; the schedule is daily but not a hard real-time guarantee.
+
+The public ICLR rating endpoint may temporarily reject automated requests. If that happens, the workflow keeps the previous score snapshot and its original observation time, continues refreshing other sources, and does not merge an ICLR snapshot older than 36 hours as if it were current.

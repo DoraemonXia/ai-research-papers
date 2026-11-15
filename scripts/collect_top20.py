@@ -18,6 +18,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
@@ -180,7 +181,7 @@ def fetch_abstract(paper: Paper) -> str:
     return ""
 
 
-def main() -> None:
+def collect_current_snapshot() -> None:
     # The page announces the current data source and its data collection mode.
     # Retrieve the first ranked page, then continue until the next page's best
     # arithmetic mean is below the current top-20 cutoff.
@@ -277,6 +278,18 @@ def main() -> None:
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {output}")
     print(f"Saved the current review snapshot for {len(selected)} papers.")
+
+
+def main() -> None:
+    try:
+        collect_current_snapshot()
+    except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError) as error:
+        previous = json.loads((ROOT / "data" / "top20_raw.json").read_text(encoding="utf-8"))
+        if previous.get("selected"):
+            message = f"ICLR review source unavailable ({error}); keeping the previous snapshot from {previous.get('retrieved_at_local', 'unknown date')}"
+            print(f"::warning title=ICLR review refresh skipped::{message}")
+            return
+        raise
 
 
 if __name__ == "__main__":

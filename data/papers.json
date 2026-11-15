@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T09:48:12+08:00",
+  "updated_at": "2026-11-15T10:01:48+08:00",
   "start_year": 2024,
   "venues": [
     "ICLR",
@@ -53,7 +53,7 @@
         4.0
       ],
       "confidence_mean": 3.3333,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -90,7 +90,7 @@
         2.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -644,7 +644,7 @@
         4.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -1235,7 +1235,7 @@
         4.0
       ],
       "confidence_mean": 3.6667,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -1272,7 +1272,7 @@
         3.0
       ],
       "confidence_mean": 3.6667,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -4510,7 +4510,7 @@
         3.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -5468,7 +5468,7 @@
         3.0
       ],
       "confidence_mean": 2.6667,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -5505,7 +5505,7 @@
         4.0
       ],
       "confidence_mean": 3.6667,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -5542,7 +5542,7 @@
         3.0
       ],
       "confidence_mean": 3.3333,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -5579,7 +5579,7 @@
         3.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -5616,7 +5616,7 @@
         3.0
       ],
       "confidence_mean": 3.3333,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -12230,7 +12230,7 @@
         4.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -12568,7 +12568,7 @@
         4.0
       ],
       "confidence_mean": 3.3333,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -12605,7 +12605,7 @@
         4.0
       ],
       "confidence_mean": 3.6667,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -12642,7 +12642,7 @@
         3.0
       ],
       "confidence_mean": 3.6667,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -14385,7 +14385,7 @@
         2.0
       ],
       "confidence_mean": 3.25,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -14422,7 +14422,7 @@
         4.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -14459,7 +14459,7 @@
         4.0
       ],
       "confidence_mean": 3.3333,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -15381,7 +15381,7 @@
         3.0
       ],
       "confidence_mean": 3.3333,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
@@ -15418,7 +15418,7 @@
         3.0
       ],
       "confidence_mean": 3.0,
-      "score_snapshot_at": "2026-11-15T09:48:12+08:00",
+      "score_snapshot_at": "2026-11-14T22:17:39+08:00",
       "score_phase": "author rebuttal and public discussion",
       "author_response_present": false,
       "reviewer_followup_present": false,
