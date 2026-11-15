@@ -729,7 +729,7 @@
       "title": "Learning stochastic dynamics from snapshots through regularized unbalanced optimal transport",
       "venue": "ICLR",
       "year": 2025,
-      "url": "https://iclr.cc/virtual/2025/poster/28822",
+      "url": "https://arxiv.org/abs/2410.00844",
       "topic": "AI for Science and Biology",
       "direction": "Protein, molecule, and biological modeling",
       "summary": "Reconstructing dynamics using samples from sparsely time-resolved snapshots is an important problem in both natural sciences and machine learning.",

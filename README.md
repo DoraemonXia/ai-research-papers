@@ -879,7 +879,7 @@
   - **Topic:** Protein, molecule, and biological modeling
   - **Summary:** The population dynamics of molecules, cells, and organisms are governed by a number of unknown internal and external forces.
 
-- **[Learning stochastic dynamics from snapshots through regularized unbalanced optimal transport](https://iclr.cc/virtual/2025/poster/28822)** — *ICLR 2025 · Oral*
+- **[Learning stochastic dynamics from snapshots through regularized unbalanced optimal transport](https://arxiv.org/abs/2410.00844)** — *ICLR 2025 · Oral*
   - **Topic:** Protein, molecule, and biological modeling
   - **Summary:** Reconstructing dynamics using samples from sparsely time-resolved snapshots is an important problem in both natural sciences and machine learning.
 
