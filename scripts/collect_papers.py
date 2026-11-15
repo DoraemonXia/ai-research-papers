@@ -15,6 +15,7 @@ from collections import defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
@@ -26,6 +27,7 @@ CATALOG_PATH = DATA_DIR / "papers.json"
 SOURCE_STATE_PATH = DATA_DIR / "source_state.json"
 REVIEW_HISTORY_PATH = DATA_DIR / "review_score_history.json"
 TOP20_PATH = DATA_DIR / "top20_raw.json"
+LINK_OVERRIDES_PATH = DATA_DIR / "link_overrides.json"
 
 PAPERLISTS_RAW = "https://raw.githubusercontent.com/papercopilot/paperlists/main"
 PAPERLISTS_MEDIA = "https://media.githubusercontent.com/media/papercopilot/paperlists/main"
@@ -34,7 +36,7 @@ YEARS = (2024, 2025, 2026)
 SCORE_TOP_N = 15
 PRESENTATION_TOP_N = 12
 CITATION_TOP_N = 10
-NORMALIZER_VERSION = 2
+NORMALIZER_VERSION = 3
 
 CONFERENCES = {
     "ICLR": "iclr",
@@ -132,6 +134,9 @@ def load_json(path: Path, fallback: Any) -> Any:
         return json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return fallback
+
+
+LINK_OVERRIDES = load_json(LINK_OVERRIDES_PATH, {})
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -261,12 +266,20 @@ def fetch_source(url: str, relpath: str) -> list[dict[str, Any]]:
     return data
 
 
-def paper_url(source: dict[str, Any]) -> str:
-    for key in ("openreview", "oa", "proceeding", "site", "pdf", "url"):
+def paper_url(source: dict[str, Any], record_id: str = "") -> str:
+    override = clean(LINK_OVERRIDES.get(record_id))
+    if override.startswith(("http://", "https://")):
+        return override
+    openreview_fallback = ""
+    for key in ("proceeding", "oa", "site", "pdf", "openreview", "url"):
         url = clean(source.get(key))
         if url.startswith("http://") or url.startswith("https://"):
+            hostname = (urlsplit(url).hostname or "").casefold()
+            if hostname == "openreview.net" or hostname.endswith(".openreview.net"):
+                openreview_fallback = openreview_fallback or url
+                continue
             return url
-    return ""
+    return openreview_fallback
 
 
 def score_record(source: dict[str, Any]) -> dict[str, Any]:
@@ -326,7 +339,7 @@ def normalize_record(source: dict[str, Any], venue: str, year: int, source_id: s
         "title": title,
         "venue": venue,
         "year": year,
-        "url": paper_url(source),
+        "url": paper_url(source, rid),
         "topic": topic,
         "direction": subtopic,
         "summary": short_summary(source, native_id),
@@ -406,14 +419,15 @@ def merge_live_iclr(records: dict[str, dict[str, Any]], raw: dict[str, Any], ret
             continue
         topic, subtopic = CURRENT_ICLR_TOPICS.get(forum_id, ("Other AI Research", "Topic classification pending"))
         existing = records.get(f"ICLR-2027-{forum_id}", {})
+        record_id = f"ICLR-2027-{forum_id}"
         record = {
-            "id": f"ICLR-2027-{forum_id}",
+            "id": record_id,
             "source_id": "ICLR-2027-live-reviews",
             "native_id": forum_id,
             "title": clean(source.get("title")),
             "venue": "ICLR",
             "year": 2027,
-            "url": clean(source.get("openreview_url")) or f"https://openreview.net/forum?id={forum_id}",
+            "url": clean(LINK_OVERRIDES.get(record_id)) or clean(source.get("openreview_url")) or f"https://openreview.net/forum?id={forum_id}",
             "topic": topic,
             "direction": subtopic,
             "summary": CURRENT_ICLR_SUMMARIES.get(forum_id, clean(source.get("abstract_snippet")) or "Short description unavailable; see the public submission."),
