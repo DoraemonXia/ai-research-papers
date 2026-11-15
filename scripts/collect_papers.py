@@ -532,11 +532,22 @@ def main() -> None:
                 print(f"{source_id}: unavailable ({error})")
             time.sleep(0.1)
 
-    flat_records = {record["id"]: record for records in records_by_source.values() for record in records}
     raw_live = load_json(TOP20_PATH, {})
     snapshot_time = parse_snapshot_time(raw_live.get("retrieved_at_local", ""))
     snapshot_age = now - snapshot_time if snapshot_time else None
-    if raw_live.get("selected") and snapshot_time and snapshot_age and timedelta(minutes=-5) <= snapshot_age <= timedelta(hours=36):
+    fresh_live_snapshot = bool(
+        raw_live.get("selected")
+        and snapshot_time
+        and snapshot_age
+        and timedelta(minutes=-5) <= snapshot_age <= timedelta(hours=36)
+    )
+    if fresh_live_snapshot:
+        # The live-review source represents the current Top 20, not a cumulative
+        # archive. Historical score snapshots are stored separately below.
+        records_by_source.pop("ICLR-2027-live-reviews", None)
+
+    flat_records = {record["id"]: record for records in records_by_source.values() for record in records}
+    if fresh_live_snapshot:
         snapshot_local = snapshot_time.astimezone(ZoneInfo("Asia/Shanghai"))
         snapshot_at = snapshot_local.isoformat(timespec="seconds")
         phase = current_iclr_phase(snapshot_time.astimezone(ZoneInfo("America/Los_Angeles")).date())
