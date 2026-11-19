@@ -1,6 +1,6 @@
 {
   "venue": "ICLR 2027",
-  "retrieved_at_local": "2026-11-17 07:58:10 +0000",
+  "retrieved_at_local": "2026-11-19 07:29:46 +0000",
   "source_rating_table": "https://papercopilot.com/statistics/iclr-statistics/iclr-2027-statistics/",
   "source_paperlist": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2027-paper-list/",
   "review_scale": "1-4",
@@ -17,7 +17,14 @@
       "batch": 1,
       "offset": 100,
       "count": 1500,
-      "max_mean": 3.5,
+      "max_mean": 3.6666666666666665,
+      "min_mean": 1.6666666666666667
+    },
+    {
+      "batch": 2,
+      "offset": 1600,
+      "count": 1500,
+      "max_mean": 3.3333333333333335,
       "min_mean": 1.6666666666666667
     }
   ],
